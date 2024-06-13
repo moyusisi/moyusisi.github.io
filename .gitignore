@@ -8,6 +8,10 @@ dist/
 package-lock.json
 yarn.lock
 
+# vuepress
+.vuepress/.temp
+.vuepress/.cache
+
 # idea ignore
 .idea/
 *.iws
