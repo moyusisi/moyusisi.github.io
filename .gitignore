@@ -9,8 +9,8 @@ package-lock.json
 yarn.lock
 
 # vuepress
-.vuepress/.temp
-.vuepress/.cache
+.temp/
+.cache/
 
 # idea ignore
 .idea/
