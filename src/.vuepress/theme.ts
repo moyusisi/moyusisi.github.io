@@ -17,9 +17,6 @@ export default hopeTheme({
   // logo: 'https://vuejs.press/images/hero.png',
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
-  // 假定是 GitHub. 同时也可以是一个完整的 GitHub URL
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
-
   docsDir: "src",
 
   // 导航栏
@@ -44,6 +41,11 @@ export default hopeTheme({
 
   // 在这里配置主题提供的插件
   plugins: {
+    // 语法高亮
+    prismjs: {
+      // 你想要使用的主题
+      theme: "one-dark",
+    },
     // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
     comment: {
       provider: "Giscus",
