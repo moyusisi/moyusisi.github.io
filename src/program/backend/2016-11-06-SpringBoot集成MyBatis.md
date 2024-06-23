@@ -1,6 +1,5 @@
 ---
-layout: blog
-title:  Spring Boot集成MyBatis
+title:  SpringBoot集成MyBatis
 date:   2016-11-06
 category: Spring
 tag: [SpringBoot, MyBatis]
