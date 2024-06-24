@@ -16,7 +16,7 @@ export default navbar([
         children: [
           { text: "Linux", link: "linux/" },
           { text: "MacOS", link: "macos/" },
-          { text: "数据库", link: "db/" },
+          { text: "DB", link: "db/" },
         ],
       }
     ]
