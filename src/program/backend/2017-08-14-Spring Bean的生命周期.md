@@ -1,25 +1,17 @@
 ---
 title:  Spring Bean的生命周期
 date:   2017-08-14
-category: 编程技术
-tag: Spring
+category: Spring
+tag: [Spring]
+order: -20170814
 ---
-
-
-
-*****
-
-* TOC
-{:toc}
-
-*****
 
 ## 生命周期
 普通的`Java`程序中一个对象通过关键字`new`进行实例化, 而在`Spring`容器里, `Bean`的生命周期由`Spring`来控制, 而`Spring`中对`Bean`的生命周期的控制非常细致, 我们可以通过`Spring`提供的扩展点来自定义`Bean`的创建过程.
 
 下图是一个典型的生命周期过程:
 
-![Bean生命周期]({{ "/static/images/bean_lifecycle.png"  | prepend: site.baseurl }} "Bean生命周期")
+![Bean生命周期](./img/bean_lifecycle.png)
 
 1. 对`Bean`进行实例化, 相当于调用构造函数, `new`出一个对象
 2. 将`值`和`Bean的引用`注入到`Bean`对应的属性中
@@ -38,19 +30,17 @@ tag: Spring
 
 `注意`: 黄色部分标识的`BeanPostProcessor`接口有点特殊, 如果我们定义了一个实现`BeanPostProcessor`接口的`Bean`(后处理器), 那么在这个`Bean`所在的容器中的 **其他所有Bean** 在初始化前后都会执行该后处理器的方法
 
-*****
-
 ## 测试示例
 如果我们在xml文件中有这样的配置
 
-~~~xml
+```xml
 <bean id="lifecycleService" class="XXX.service.LifecycleService"
   init-method="initMethod" destroy-method="destroyMethod"/>
-~~~
+```
 
 Bean的定义如下:
 
-~~~java
+```java
 // 后处理器
 @Service
 public class MyBeanPostProcessor implements BeanPostProcessor {
@@ -128,11 +118,11 @@ public class LifecycleService implements BeanNameAware, BeanFactoryAware, Applic
             logger.info("10. destroyMethod");
         }
 }
-~~~
+```
 
 这个例子的输出结果为:
 
-~~~java
+```java
 1. 构造方法
 2. BeanNameAware.setBeanName()方法, 用于获取Bean的ID
 3. BeanFactoryAware.setBeanFactory()方法
@@ -145,6 +135,4 @@ BeanPostProcessor.postProcessBeforeInitialization()方法, beanName=lifecycleSer
 8. @PreDestroy
 9. DisposableBean.destroy()方法
 10. destroyMethod
-~~~
-
-*****
+```
