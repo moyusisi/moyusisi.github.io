@@ -14,8 +14,8 @@ export default hopeTheme({
 
   iconAssets: "fontawesome-with-brands",
 
-  // logo: 'https://vuejs.press/images/hero.png',
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: '/assets/image/logo.jpg',
+  // logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
   docsDir: "src",
 
