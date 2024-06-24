@@ -27,7 +27,6 @@ export default navbar([
     prefix: '/algorithm/',
     children: [
       { text: '动态规划', link: '动态规划/' },
-      { text: '排序算法', link: '排序算法/' },
       { text: '力扣练习', link: 'leetcode/' }
     ]
   },
