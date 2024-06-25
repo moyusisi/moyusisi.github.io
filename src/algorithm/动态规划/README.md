@@ -1,4 +1,10 @@
-# 动态规划
+---
+title:  动态规划
+date: 2023-06-18
+category: Algorithm
+tag: [算法]
+order: -20230618
+---
 
 ## 什么是动态规划
 

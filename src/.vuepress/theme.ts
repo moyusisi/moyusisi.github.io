@@ -12,6 +12,15 @@ export default hopeTheme({
     // url: "https://mister-hope.com",
   },
 
+  blog: {
+    name: "moyusisi",
+    description: "逆水行舟，不进则退",
+    medias: {
+      GitHub: "https://github.com/Mister-Hope",
+      Wechat: "12345",
+    },
+  },
+
   iconAssets: "fontawesome-with-brands",
 
   logo: '/assets/image/logo.jpg',
@@ -67,6 +76,11 @@ export default hopeTheme({
 
     // 图片预览
     photoSwipe: false,
+
+    // 启用博客功能
+    blog: {
+      excerptLength: 0,
+    },
 
     // 此处开启了很多功能用于演示，你应仅保留用到的功能。
     mdEnhance: {
