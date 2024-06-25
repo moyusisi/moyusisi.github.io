@@ -16,8 +16,6 @@ export default hopeTheme({
     name: "moyusisi",
     description: "逆水行舟，不进则退",
     medias: {
-      GitHub: "https://github.com/Mister-Hope",
-      Wechat: "12345",
     },
   },
 
