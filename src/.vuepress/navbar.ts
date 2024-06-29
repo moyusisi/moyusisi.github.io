@@ -2,10 +2,12 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  "/portfolio",
+  // "/portfolio",
+  // "/project",
   // NavbarGroup
   {
     text: '编程',
+    icon: 'code',
     prefix: '/program/',
     children: [
       { text: '后端技术', link: 'backend/' },
@@ -24,6 +26,7 @@ export default navbar([
   // NavbarGroup
   {
     text: '算法',
+    icon: "lightbulb",
     prefix: '/algorithm/',
     children: [
       { text: '动态规划', link: '动态规划/' },
@@ -31,26 +34,7 @@ export default navbar([
     ]
   },
   // NavbarLink
-  { text: '保险', link: '/insurance/' },
-  {
-    text: "指南",
-    icon: "lightbulb",
-    prefix: "/guide/",
-    children: [
-      {
-        text: "Bar",
-        icon: "lightbulb",
-        prefix: "bar/",
-        children: ["baz", { text: "...", icon: "ellipsis", link: "" }],
-      },
-      {
-        text: "Foo",
-        icon: "lightbulb",
-        prefix: "foo/",
-        children: ["ray", { text: "...", icon: "ellipsis", link: "" }],
-      },
-    ],
-  },
+  { text: '保险', icon: "lightbulb", link: '/insurance/' },
   {
     text: "V2 文档",
     icon: "book",

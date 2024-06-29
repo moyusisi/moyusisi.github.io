@@ -22,5 +22,31 @@ export default sidebar({
       icon: "person-chalkboard",
       link: "https://plugin-md-enhance.vuejs.press/zh/guide/content/revealjs/demo.html",
     },
+    {
+      text: "编程",
+      prefix: "program/",
+      link: "program/",
+      children: [
+        { text: '后端技术', link: 'backend/' },
+        { text: '前端技术', link: 'frontend/' },
+        {
+          text: "运维技术",
+          prefix: "ops/",
+          children: "structure",
+        }
+      ]
+    },
+    {
+      text: '算法',
+      prefix: 'algorithm/',
+      link: "algorithm/",
+      children: "structure",
+    },
+    {
+      text: "保险",
+      prefix: "insurance/",
+      link: "insurance/",
+      children: "structure",
+    },
   ],
 });

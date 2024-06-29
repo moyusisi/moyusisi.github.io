@@ -33,7 +33,7 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: "默认页脚",
+  footer: "",
   displayFooter: true,
 
   // 加密配置
@@ -74,6 +74,8 @@ export default hopeTheme({
 
     // 图片预览
     photoSwipe: false,
+    // 阅读时间
+    readingTime: false,
 
     // 启用博客功能
     blog: {
