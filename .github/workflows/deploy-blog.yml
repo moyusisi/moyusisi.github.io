@@ -6,9 +6,11 @@ on:
   # push 到 main 分支时触发
   push:
     branches: ["main"]
+  # 手动触发部署
+  workflow_dispatch:
 # 可参考 https://blog.csdn.net/weixin_43832950/article/details/131523047
 jobs:
-  build-and-deploy:
+  deploy-gh-pages:
     # 运行所需要的虚拟机环境
     runs-on: ubuntu-latest
     # 运行步骤 每个短横线 - 表示一个步骤, 从上至下顺序执行
@@ -16,12 +18,19 @@ jobs:
       # clone仓库代码到工作流中
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # 最近更新时间 等git日志相关信息，需要拉取全部提交记录
+          fetch-depth: 0
+          # 如果你文档需要 Git 子模块，取消注释下一行
+          # submodules: true
       # 安装 node 环境
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '16'
-      # 安装依赖
+          # 选择要使用的 node 版本
+          node-version: 18
+          cache: npm
+      # 安装依赖包
       - name: Install
         run: npm install
       # 构建
@@ -33,7 +42,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           # 要部署的文件夹
-          folder: docs/.vuepress/dist
+          folder: src/.vuepress/dist
           # 希望部署到的分支
           branch: gh-pages
           # 仓库访问令牌，默认情况是不需要填的，如果您需要更多权限，例如部署到另一个存储库才需要填写
