@@ -1,5 +1,6 @@
 # 工作流名称 生成并部署到GitHub Pages
-name: Build and Deploy
+# name: Build and Deploy
+name: 部署站点
 
 # 触发部署的条件
 on:
@@ -31,7 +32,7 @@ jobs:
           node-version: 18
           cache: npm
       # 安装依赖包
-      - name: Install
+      - name: NPMInstall
         run: npm install
       # 构建
       - name: Build
