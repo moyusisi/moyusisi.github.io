@@ -34,7 +34,7 @@ export default navbar([
     ]
   },
   // NavbarLink
-  { text: '保险', icon: "lightbulb", link: '/insurance/' },
+  { text: '保险理财', icon: "lightbulb", link: '/insurance/' },
   {
     text: "V2 文档",
     icon: "book",
