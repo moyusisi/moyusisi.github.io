@@ -1,1 +1,41 @@
+# 工作流名称 生成并部署到GitHub Pages
+name: Build and Deploy
 
+# 触发部署的条件
+on:
+  # push 到 main 分支时触发
+  push:
+    branches: ["main"]
+# 可参考 https://blog.csdn.net/weixin_43832950/article/details/131523047
+jobs:
+  build-and-deploy:
+    # 运行所需要的虚拟机环境
+    runs-on: ubuntu-latest
+    # 运行步骤 每个短横线 - 表示一个步骤, 从上至下顺序执行
+    steps:
+      # clone仓库代码到工作流中
+      - name: Checkout
+        uses: actions/checkout@v4
+      # 安装 node 环境
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '16'
+      # 安装依赖
+      - name: Install
+        run: npm install
+      # 构建
+      - name: Build
+        run: npm run build
+      # 部署到 Github Pages
+      - name: Setup Pages
+        # 此actions的官方文档 https://github.com/JamesIves/github-pages-deploy-action
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          # 要部署的文件夹
+          folder: docs/.vuepress/dist
+          # 希望部署到的分支
+          branch: gh-pages
+          # 仓库访问令牌，默认情况是不需要填的，如果您需要更多权限，例如部署到另一个存储库才需要填写
+          # ACCESS_TOKEN 对应GitHub Secrets中设置的字段，不要照搬
+          # TOKEN: ${{ secrets.ACCESS_TOKEN }}
