@@ -32,7 +32,6 @@ jobs:
         with:
           # 选择要使用的 node 版本
           node-version: 18
-          cache: npm
       # 安装依赖包
       - name: NPMInstall
         run: npm install
