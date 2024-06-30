@@ -59,13 +59,13 @@ export default hopeTheme({
     //   theme: "one-dark",
     // },
 
-    // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
+    // 评论服务，参考：https://www.51cto.com/article/761976.html
     comment: {
       provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
+      repo: "moyusisi/comments",
+      repoId: "R_kgDOMP8txw",
       category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
+      categoryId: "DIC_kwDOMP8tx84CgetG",
     },
 
     components: {
