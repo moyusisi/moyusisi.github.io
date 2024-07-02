@@ -1,5 +1,6 @@
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
+import { path } from "vuepress/utils";
 
 import theme from "./theme.js";
 
@@ -13,5 +14,12 @@ export default defineUserConfig({
     theme: theme,
 
     bundler: viteBundler(),
+
+    alias: {
+        "@KatexPlayground": path.resolve(
+            __dirname,
+            "./components/KatexPlayground.js",
+        ),
+    },
 })
 
