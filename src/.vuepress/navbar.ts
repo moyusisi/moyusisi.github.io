@@ -10,15 +10,15 @@ export default navbar([
     icon: 'code',
     prefix: '/program/',
     children: [
-      { text: '后端技术', link: 'backend/' },
-      { text: '前端技术', link: 'frontend/' },
+      { text: '代码笔记', link: 'code/' },
       {
-        text: "运维技术",
+        text: "工具运维",
         prefix: "ops/",
         children: [
           { text: "Linux", link: "linux/" },
           { text: "MacOS", link: "macos/" },
           { text: "DB", link: "db/" },
+          { text: "工具", link: "tool/" },
         ],
       }
     ]

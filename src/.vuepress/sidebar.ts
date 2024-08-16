@@ -27,10 +27,9 @@ export default sidebar({
       prefix: "program/",
       link: "program/",
       children: [
-        { text: '后端技术', link: 'backend/' },
-        { text: '前端技术', link: 'frontend/' },
+        { text: '代码笔记', link: 'code/' },
         {
-          text: "运维技术",
+          text: "工具运维",
           prefix: "ops/",
           children: "structure",
         }
