@@ -13,10 +13,20 @@ export default hopeTheme({
   },
 
   blog: {
+    // 博主姓名
     name: "moyusisi",
+    // 口号、座右铭或介绍语。
     description: "逆水行舟，不进则退",
+    // 博主的媒体链接配置。
     medias: {
+      // QQ: "QQ",
     },
+    // 是否在侧边栏展示博主信息。默认值: "mobile"
+    sidebarDisplay: 'mobile',
+    // 时间轴的顶部文字。默认值: "昨日不在"
+    timeline: "昨日不在",
+    // 每页的文章数量。默认 10
+    articlePerPage: 10,
   },
 
   iconAssets: "fontawesome-with-brands",
@@ -79,6 +89,7 @@ export default hopeTheme({
 
     // 启用博客功能
     blog: {
+      // 自动生成的摘要的长度， 0表示不自动生成摘要。
       excerptLength: 0,
     },
 
