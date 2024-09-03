@@ -29,6 +29,7 @@ export default hopeTheme({
     articlePerPage: 10,
   },
 
+  // 图标在这里搜 https://fontawesome.com/search?o=r&m=free
   iconAssets: "fontawesome-with-brands",
 
   logo: '/assets/image/logo.jpg',

@@ -1,6 +1,6 @@
 ---
 title: 保险理财
-icon: home
+icon: chart-line
 author: false
 ---
 
