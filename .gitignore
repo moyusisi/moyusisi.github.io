@@ -5,7 +5,6 @@ Thumbs.db
 # node ignore
 node_modules/
 dist/
-package-lock.json
 yarn.lock
 
 # vuepress
