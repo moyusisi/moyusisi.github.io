@@ -13,12 +13,11 @@ export default navbar([
       { text: '代码笔记', link: 'code/' },
       {
         text: "工具运维",
-        prefix: "ops/",
         children: [
           { text: "Linux", link: "linux/" },
           { text: "MacOS", link: "macos/" },
           { text: "DB", link: "db/" },
-          { text: "工具", link: "tool/" },
+          { text: "Web", link: "web/" },
         ],
       },
     ]
@@ -29,7 +28,7 @@ export default navbar([
     icon: "lightbulb",
     prefix: '/algorithm/',
     children: [
-      { text: '动态规划', link: '动态规划/' },
+      { text: '动态规划', link: 'dp/' },
       { text: '力扣练习', link: 'leetcode/' }
     ]
   },

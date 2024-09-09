@@ -26,7 +26,7 @@ export default hopeTheme({
   navbar,
 
   // 侧边栏
-  // sidebar,
+  sidebar,
 
   // 是否默认显示页脚。默认值: false
   displayFooter: true,
