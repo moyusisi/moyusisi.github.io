@@ -1,6 +1,6 @@
 ---
-title: 编程
-icon: laptop-code
+title: Linux
+icon: linux
 author: false
 article: false
 timeline: false

@@ -1,6 +1,6 @@
 ---
-title: 编程
-icon: laptop-code
+title: MacOS
+icon: apple
 author: false
 article: false
 timeline: false

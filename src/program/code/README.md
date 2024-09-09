@@ -1,6 +1,6 @@
 ---
-title: 编程
-icon: laptop-code
+title: 代码笔记
+icon: code
 author: false
 article: false
 timeline: false

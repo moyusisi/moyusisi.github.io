@@ -7,19 +7,14 @@ export default navbar([
   // NavbarGroup
   {
     text: '编程',
-    icon: 'code',
+    icon: 'laptop-code',
     prefix: '/program/',
     children: [
       { text: '代码笔记', link: 'code/' },
-      {
-        text: "工具运维",
-        children: [
-          { text: "Linux", link: "linux/" },
-          { text: "MacOS", link: "macos/" },
-          { text: "DB", link: "db/" },
-          { text: "Web", link: "web/" },
-        ],
-      },
+      { text: "Linux", link: "linux/" },
+      { text: "MacOS", link: "macos/" },
+      { text: "DB", link: "db/" },
+      { text: "Web", link: "web/" },
     ]
   },
   // NavbarGroup
