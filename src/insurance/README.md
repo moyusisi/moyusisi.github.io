@@ -2,6 +2,9 @@
 title: 保险理财
 icon: chart-line
 author: false
+article: false
+timeline: false
+toc: false
 ---
 
 ::: tip 提示

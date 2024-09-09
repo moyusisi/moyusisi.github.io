@@ -34,10 +34,5 @@ export default navbar([
     ]
   },
   // NavbarLink
-  { text: '保险理财', icon: "lightbulb", link: '/insurance/' },
-  {
-    text: "V2 文档",
-    icon: "book",
-    link: "https://theme-hope.vuejs.press/zh/",
-  },
+  { text: '保险理财', icon: "chart-line", link: '/insurance/' },
 ]);
