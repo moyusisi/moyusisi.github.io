@@ -1,6 +1,6 @@
 ---
 title: Web
-icon: network-wired
+icon: globe
 dir:
   order: 4
 author: false
