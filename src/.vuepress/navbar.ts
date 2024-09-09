@@ -20,7 +20,7 @@ export default navbar([
           { text: "DB", link: "db/" },
           { text: "工具", link: "tool/" },
         ],
-      }
+      },
     ]
   },
   // NavbarGroup
