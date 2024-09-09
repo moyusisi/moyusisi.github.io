@@ -12,6 +12,30 @@ export default hopeTheme({
     // url: "https://mister-hope.com",
   },
 
+  favicon: "/favicon.ico",
+
+  // 图标在这里搜 https://fontawesome.com/search?o=r&m=free
+  iconAssets: "fontawesome-with-brands",
+
+  logo: '/assets/image/logo.jpg',
+  // logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+
+  docsDir: "src",
+
+  // 导航栏
+  navbar,
+
+  // 侧边栏
+  // sidebar,
+
+  // 是否默认显示页脚。默认值: false
+  displayFooter: true,
+  // 页脚，可输入 HTMLString。
+  footer: "",
+  // 默认的版权信息，设置为 false 来默认禁用它。类型: string | false。默认值: "Copyright © <作者>"
+  // copyright: "Copyright © <author.name>",
+  
+  // 博客功能，通过插件提供的。https://theme-hope.vuejs.press/zh/config/theme/feature.html
   blog: {
     // 博主姓名
     name: "moyusisi",
@@ -28,25 +52,7 @@ export default hopeTheme({
     // 每页的文章数量。默认 10
     articlePerPage: 10,
   },
-
-  // 图标在这里搜 https://fontawesome.com/search?o=r&m=free
-  iconAssets: "fontawesome-with-brands",
-
-  logo: '/assets/image/logo.jpg',
-  // logo: "https://theme-hope-assets.vuejs.press/logo.svg",
-
-  docsDir: "src",
-
-  // 导航栏
-  navbar,
-
-  // 侧边栏
-  // sidebar,
-
-  // 页脚
-  footer: "",
-  displayFooter: true,
-
+  
   // 加密配置
   encrypt: {
     config: {
