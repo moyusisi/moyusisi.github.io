@@ -1,6 +1,6 @@
 ---
 title: Linux
-icon: linux
+icon: windows
 author: false
 article: false
 timeline: false
