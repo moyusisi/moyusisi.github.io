@@ -1,6 +1,8 @@
 ---
-title: 代码笔记
-icon: code
+title: Java
+icon: js
+dir:
+  order: 1
 author: false
 article: false
 timeline: false

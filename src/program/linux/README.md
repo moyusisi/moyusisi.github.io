@@ -1,6 +1,8 @@
 ---
 title: Linux
-icon: windows
+icon: linux
+dir:
+  order: 5
 author: false
 article: false
 timeline: false

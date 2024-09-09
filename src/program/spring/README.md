@@ -1,8 +1,8 @@
 ---
-title: 数据库
-icon: database
+title: Spring
+icon: leaf
 dir:
-  order: 3
+  order: 2
 author: false
 article: false
 timeline: false

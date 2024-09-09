@@ -10,11 +10,12 @@ export default navbar([
     icon: 'laptop-code',
     prefix: '/program/',
     children: [
-      { text: '代码笔记', link: 'code/' },
-      { text: "Linux", link: "linux/" },
-      { text: "MacOS", link: "macos/" },
+      { text: "Java", link: "java/" },
+      { text: 'Spring', link: 'spring/' },
       { text: "DB", link: "db/" },
       { text: "Web", link: "web/" },
+      { text: "Linux", link: "linux/" },
+      { text: "MacOS", link: "macos/" },
     ]
   },
   // NavbarGroup
