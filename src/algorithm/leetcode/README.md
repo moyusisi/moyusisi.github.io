@@ -1,9 +1,19 @@
+---
+title: 力扣练习
+icon: laptop-code
+author: false
+article: false
+timeline: false
+toc: false
+dir:
+  order: 5
+---
 
-1. [1.两数之和](./0001.两数之和.md)
-1. [2.零钱兑换](./322.零钱兑换.md)
-1. [518.零钱兑换II](./518.零钱兑换 II.md)
+::: tip 提示
+本专题的文章涉及力扣算法题目的解答与思路解析。
+:::
 
-# 力扣练习
+<Catalog />
 
 # 二分查找
 

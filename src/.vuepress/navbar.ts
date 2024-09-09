@@ -7,7 +7,7 @@ export default navbar([
   // NavbarGroup
   {
     text: '编程',
-    icon: 'laptop-code',
+    icon: 'code',
     prefix: '/program/',
     children: [
       { text: "Java", link: "java/" },
