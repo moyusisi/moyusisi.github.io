@@ -30,4 +30,6 @@ export default navbar([
   },
   // NavbarLink
   { text: '保险理财', icon: "chart-line", link: '/insurance/' },
+  // NavbarLink
+  { text: '文化历史', icon: "building", link: '/culture/' },
 ]);
