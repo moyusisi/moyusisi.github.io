@@ -45,7 +45,7 @@ redis-cli ping
 ## 设置Redis密码
 
 Redis的配置文件位于`/usr/local/etc/redis.conf`  
-打开的配置文件，找到`# requirepass foobared`这一行将其修改为：
+默认无需用户名密码即可连接，若要设置密码，打开的配置文件，找到`# requirepass foobared`这一行将其修改为：
 
 ```bash
 requirepass your_password
